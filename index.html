@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyDesiCart - Home</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; }
-        header { background: #ff6600; padding: 20px; text-align: center; color: white; font-size: 24px; }
-        nav { background-color: #333; padding: 10px; text-align: center; }
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; text-align: center; }
+        header { background: #ff6600; padding: 20px; color: white; font-size: 24px; }
+        nav { background-color: #333; padding: 10px; }
         nav a { color: white; text-decoration: none; margin: 15px; font-size: 18px; padding: 10px; }
         nav a:hover { background: #ff6600; border-radius: 5px; }
         .container { max-width: 900px; margin: 20px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .chatbot { position: fixed; bottom: 20px; right: 20px; background: #0084ff; color: white; padding: 15px 20px; border-radius: 20px; cursor: pointer; font-weight: bold; }
         .logo { max-width: 150px; display: block; margin: 0 auto 20px; }
+        .featured-image { max-width: 100%; border-radius: 10px; margin-top: 20px; }
         .btn { background: #ff6600; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-size: 18px; }
         .btn:hover { background: #e55b00; }
     </style>
@@ -33,17 +33,12 @@
     <div class="container">
         <h2>Why Choose MyDesiCart?</h2>
         <p>We provide A-to-Z worldwide shipping of Indian products, ensuring fast delivery, best prices, and authentic quality.</p>
+        <img src="desi.jpg" alt="Featured Image" class="featured-image">
         <a href="services.html" class="btn">Explore Services</a>
     </div>
 
-    <div class="chatbot" onclick="openChat()">💬 Chat with Us</div>
-
     <script>
-        function openChat() {
-            window.open('https://tawk.to/', '_blank'); // Replace with your chatbot link
-        }
+        window.chtlConfig = { chatbotId: "5671939276" };
     </script>
-</body>
-</html>
-   
-   
+    <script
+
