@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyDesiCart - Home</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f9f9f9; }
-        nav { background-color: #333; padding: 10px; }
-        nav a { color: white; text-decoration: none; margin: 10px; font-size: 18px; }
-        .container { max-width: 800px; margin: 20px auto; background: white; padding: 20px; border-radius: 10px; }
-        .chatbot { position: fixed; bottom: 20px; right: 20px; background: #0084ff; color: white; padding: 10px 15px; border-radius: 20px; cursor: pointer; }
-        .logo { max-width: 200px; margin: 10px auto; display: block; }
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; }
+        header { background: #ff6600; padding: 20px; text-align: center; color: white; font-size: 24px; }
+        nav { background-color: #333; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 15px; font-size: 18px; padding: 10px; }
+        nav a:hover { background: #ff6600; border-radius: 5px; }
+        .container { max-width: 900px; margin: 20px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .chatbot { position: fixed; bottom: 20px; right: 20px; background: #0084ff; color: white; padding: 15px 20px; border-radius: 20px; cursor: pointer; font-weight: bold; }
+        .logo { max-width: 150px; display: block; margin: 0 auto 20px; }
+        .btn { background: #ff6600; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-size: 18px; }
+        .btn:hover { background: #e55b00; }
     </style>
 </head>
 <body>
 
-    <img src="desicart.jpg" alt="MyDesiCart Logo" class="logo">
-    <h1>Welcome to MyDesiCart</h1>
-    <p>A Cart Full of Goodness - Bringing Indian Products to the World.</p>
+    <header>
+        <img src="desicart.jpg" alt="MyDesiCart Logo" class="logo">
+        Welcome to MyDesiCart
+    </header>
     
     <nav>
         <a href="index.html">Home</a>
@@ -26,12 +31,12 @@
     </nav>
 
     <div class="container">
-        <h2>Our Services</h2>
-        <p>We provide A-to-Z worldwide shipping of Indian products.</p>
-        <p>Fast delivery, best prices, and authentic quality.</p>
+        <h2>Why Choose MyDesiCart?</h2>
+        <p>We provide A-to-Z worldwide shipping of Indian products, ensuring fast delivery, best prices, and authentic quality.</p>
+        <a href="services.html" class="btn">Explore Services</a>
     </div>
 
-    <div class="chatbot" onclick="openChat()">Chat with Us</div>
+    <div class="chatbot" onclick="openChat()">💬 Chat with Us</div>
 
     <script>
         function openChat() {
@@ -40,4 +45,5 @@
     </script>
 </body>
 </html>
-
+   
+   
